@@ -1,16 +1,21 @@
-# grab_a_car
+# Grab A car
 
 An app enabling user to rent a car.
 
-## Getting Started
+## flutter version
+Flutter version 3.27.4 with dart 3.6.2 is used in this project.
 
-This project is a starting point for a Flutter application.
+output of `flutter --version`:
+```output
+Flutter 3.27.4 • channel stable • https://github.com/flutter/flutter.git
+Framework • revision d8a9f9a52e (5 weeks ago) • 2025-01-31 16:07:18 -0500
+Engine • revision 82bd5b7209
+Tools • Dart 3.6.2 • DevTools 2.40.3
+```
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## How to run.
+1. Set up a database and insert some data. See [script folder](../../script) for more info.
+2. Modify [connection_credentials.json file](./assets/connection_credentials.json). Write credentials for connecting to the database you just set up.
+3. Run:
+    * `flutter pub get`
+    * `flutter run`
