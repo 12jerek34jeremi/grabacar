@@ -1,3 +1,38 @@
+# Grab a Car
+In the 4th semester of my bachelor's degree (Warsaw, 2022/23), I took a course called "Databases 2." As part of the course, we worked in teams of four to complete a project. Our task was to design a database for a short-term car rental company and develop a mobile application for users to rent cars. I was responsible for developing the application, while the other three team members took care of the database.    
+    
+The application connects directly to the database... There is no additional server in between, no django or flask... I do realize that this is highly insecure and one should not do it like that. It was done this way because of project requirements of the course.
+
+You can watch a [video (link)](https://drive.google.com/file/d/1pdO7Id0-ujkVgr1wntMG_2vI571lX2dA/view?usp=sharing) too see how the app works or see the screenshots below. The code for the app is in [user_app/grab_a_car folder](user_app/grab_a_car).
+## App Screenshots
+<p float="left">
+  <img src="assets/appscreenshots/login.jpg" width="480" />
+  <img src="assets/appscreenshots/map.jpg" width="480" />
+  <img src="assets/appscreenshots/filters.jpg" width="480" />
+</p>
+<p float="left">
+  <img src="assets/appscreenshots/car_details.jpg" width="480" />
+  <img src="assets/appscreenshots/slider.jpg" width="480" />
+  <img src="assets/appscreenshots/finished_tours.jpg" width="480" />
+</p>
+<p float="left">
+  <img src="assets/appscreenshots/present_tours.jpg" width="480" />
+  <img src="assets/appscreenshots/active_tour.jpg" width="480" />
+  <img src="assets/appscreenshots/invoices.jpg" width="480" />
+</p>
+<p float="left">
+  <img src="assets/appscreenshots/personal_info.jpg" width="480" />
+  <img src="assets/appscreenshots/update_info.jpg" width="480" />
+  <img src="assets/appscreenshots/logout.jpg" width="480" />
+</p>
+<p float="left">
+  <img src="assets/appscreenshots/register.jpg" width="480" />
+</p>
+
+
+
+
+
 31.03.2023 15:45
 Z: SEM4/BD2/ **BD2 projekt wymagania**
 Tagi:  

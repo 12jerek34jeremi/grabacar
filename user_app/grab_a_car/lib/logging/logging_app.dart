@@ -35,7 +35,8 @@ class _LoggingScaffoldState extends State<LoggingScaffold> {
   final TextEditingController regEmailController = TextEditingController();
   final TextEditingController regPasswordController = TextEditingController();
 
-  bool _passwordVisible = false;
+  bool _logPasswordVisible = false;
+  bool _regPasswordVisible = false;
 
   @override
   Widget build(BuildContext context) {
@@ -65,17 +66,17 @@ class _LoggingScaffoldState extends State<LoggingScaffold> {
                     child: TextFormField(
                       controller: logPasswordController,
                       validator: __getValidator('Password'),
-                      obscureText: !_passwordVisible,
+                      obscureText: !_logPasswordVisible,
                       decoration: InputDecoration(
                         border: UnderlineInputBorder(),
                         labelText: 'password',
                         suffixIcon: IconButton(
                           icon: Icon(
-                            _passwordVisible ? Icons.visibility : Icons.visibility_off,
+                            _logPasswordVisible ? Icons.visibility : Icons.visibility_off,
                             color: Theme.of(context).primaryColorDark,
                           ),
                           onPressed: () {
-                            setState(() {_passwordVisible = !_passwordVisible;});
+                            setState(() {_logPasswordVisible = !_logPasswordVisible;});
                           },
                         ),
                       ),
@@ -150,11 +151,21 @@ class _LoggingScaffoldState extends State<LoggingScaffold> {
                   SizedBox(
                     width: 300,
                     child: TextFormField(
-                      decoration: const InputDecoration(
-                        border: UnderlineInputBorder(),
+                      decoration: InputDecoration(
+                        border: const UnderlineInputBorder(),
                         labelText: 'password',
+                        suffixIcon: IconButton(
+                          icon: Icon(
+                            _regPasswordVisible ? Icons.visibility : Icons.visibility_off,
+                            color: Theme.of(context).primaryColorDark,
+                          ),
+                          onPressed: () {
+                            setState(() {_regPasswordVisible = !_regPasswordVisible;});
+                          },
+                        ),
                       ),
                       validator: __getValidator('Password'),
+                      obscureText: !_regPasswordVisible,
                       controller: regPasswordController,
                     ),
                   ),
